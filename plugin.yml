@@ -1,0 +1,34 @@
+name: Game Ranks
+version: 1.0.6
+description: A simple lightweight plugin, that allows individual players pay for switching ranks on a predetermined path configured by server staff.
+author: SlyJaden
+website: http://www.summit27.org/
+depend: [Vault]
+
+main: org.summit27.gameranks.GameRanks
+commands:
+   rank:
+      description: This command shows you the rank statistics.
+      usage: /<command>
+      permission: gameranks.rank
+      permission-message: You don't have permission to view your rank statistics.
+   ranks:
+      description: This command shows you the avaliable ranks!
+      usage: /<command> [rank]
+      permission: gameranks.ranks
+      permission-message: You don't have permission to view the avaliable ranks.
+   rankup:
+      description: This command will purchase your next rank requires "Vault".
+      usage: /<command>
+      permission: gameranks.rankup
+      permission-message: You don't have permission to purchase the next rank up.
+   rankdown:
+      description: This command will refund your previous rank requires "Vault".
+      usage: /<command>
+      permission: gameranks.rankdown
+      permission-message: You don't have permission to refund your previous rank.
+   gr:
+      desciption: This command shows all the Game Ranks commands.
+      usage: /<command> [help, version, reload]
+      permission: gameranks.help
+      permission-message: You don't have the permission to get help from Game Ranks.

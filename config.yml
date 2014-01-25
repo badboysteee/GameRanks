@@ -1,0 +1,46 @@
+symbol: $
+default: guest 
+
+ranks:
+  shame:
+    name: '&1Stupid'
+    description:
+    - '&bThis is the below default rank.'
+    - This costs 100$ to purchase!
+    permissions:
+    - gameranks.rankup
+    - gameranks.rankdown
+    - gameranks.ranks
+    - gameranks.rank
+    price: 0
+    refund: 0
+  guest:
+    name: Noob
+    description:
+    - This is a the default guest rank.
+    - This description can have multiple lines, no limit.
+    permissions:
+    - gameranks.help
+    price: 50
+    refund: 25
+  example:
+    name: VIP
+    description:
+    - This is the example rank.
+    - This costs 100$ to purchase!
+    price: 100
+    refund: 50
+  example2:
+    name: Cool
+    description:
+    - This is the second example rank.
+    - This costs 200$ to purchase!
+    price: 200
+    refund: 100
+  example3:
+    name: Awesome
+    description:
+    - This is the third example rank.
+    - This costs 300$ to purchase!
+    price: 300
+    refund: 200
