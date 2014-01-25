@@ -107,6 +107,9 @@ public class RanksHandler {
 			if(newGroup.equals(""))
 				return;
 			
+			for(org.bukkit.World world: plugin.getServer().getWorlds())
+				plugin.permission.playerAddGroup(world, player.getName(), newGroup);
+			
 		}
 		catch(Exception e) {
 			e.printStackTrace();
